@@ -25,7 +25,7 @@ int insertPosition(int arr[], int N, int x){
     while(low <= high){
         int mid = (low+high)/2;
 
-        if(arr[mid] > x){
+        if(arr[mid] >= x){
             index = mid;
             high = mid - 1;
         } 
